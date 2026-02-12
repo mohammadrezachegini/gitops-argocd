@@ -3,8 +3,6 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [ master ]
-    paths:
-      - 'apps/nginx-demo/**'
 
 env:
   DOCKER_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/nginx-demo
